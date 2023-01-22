@@ -1,17 +1,9 @@
 @import "../../app.component.scss";
-.navbar {
+#side-nav{
     background: $dark-blue;
-    height: 12vh;
-    margin: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    
-    .spacer{
-        flex: 1 1 auto;
-    }
 
-    .logo{
-        width: 10vw;
+    a{
+        text-decoration: none;
     }
 
     .nav-item{
@@ -21,5 +13,58 @@
 
     .nav-item:hover, .nav-item.active{
         color: $orange;
+        text-decoration: none;
     }
+
+    #lang-item{
+        flex-direction: row-reverse;
+    }
+}
+.navbar {
+    background: $dark-blue;
+    height: 12vh;
+    margin: auto;
+    padding-right: 5%;
+    
+    .spacer{
+        flex: 1 1 auto;
+    }
+
+    .logo{
+        margin-left: 3%;
+        width: 10vw;
+    }
+
+    .logo:hover{
+        cursor: pointer;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    .nav-item{
+        color: $light-grey;
+        margin-right: 5px;
+    }
+
+    .nav-item:hover, .nav-item.active{
+        color: $orange;
+        text-decoration: none;
+    }
+
+    #lang-item{
+        flex-direction: row-reverse;
+    }
+
+    .mobile-menu{
+        background: $dark-blue;
+        color: $light-grey;
+    }
+
+    .mobile-menu:hover, .mobile-menu.active{
+        color: $orange;
+        cursor: pointer;
+    }
+
 }

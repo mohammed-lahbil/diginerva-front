@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Host, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,16 +8,26 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   langUser = '';
+  pageWidth: any;
+  pageHeight: any;
 
   constructor(private translate: TranslateService) {}
   
   ngOnInit(){
     this.langUser = this.translate.currentLang;
+    this.pageWidth = window.innerWidth;
+    this.pageHeight = window.innerHeight;
+    console.log(this.pageWidth)
   }
 
   changeLang(lang: string){
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
     this.langUser = lang;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.pageWidth = window.innerWidth;
   }
 }
