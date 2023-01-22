@@ -18,5 +18,6 @@ export class HeaderComponent {
   changeLang(lang: string){
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
+    this.langUser = lang;
   }
 }
