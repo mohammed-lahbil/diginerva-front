@@ -1,1 +1,15 @@
-<p>header works!</p>
+<mat-toolbar class="navbar">
+    <img src="../../../assets/media/logo-no-text.svg" alt="Logo" class="logo">
+    <div class="spacer"></div>
+    <a class="nav-item" mat-button>{{ "header.home" | translate }}</a>
+    <a class="nav-item" mat-button>{{ "header.about" | translate }}</a>
+    <a class="nav-item" mat-button>{{ "header.services" | translate }}</a>
+    <a class="nav-item" mat-button>{{ "header.contact" | translate }}</a>
+    <button class="nav-item" mat-button [matMenuTriggerFor]="menu">{{ langUser | uppercase }}
+        <mat-icon class="material-symbols-outlined">expand_more</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="changeLang('en')">EN</button>
+        <button mat-menu-item (click)="changeLang('fr')">FR</button>
+    </mat-menu>
+</mat-toolbar>

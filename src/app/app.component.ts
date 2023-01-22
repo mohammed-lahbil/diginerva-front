@@ -7,9 +7,11 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  langUser : any;
   title = 'diginerva';
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('fr');
-    translate.use('fr');
+    this.langUser = this.translate.getBrowserLang();
+    this.translate.setDefaultLang(this.langUser);
+    this.translate.use(this.langUser);
   }
 }
