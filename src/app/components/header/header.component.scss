@@ -1,0 +1,25 @@
+@import "../../app.component.scss";
+.navbar {
+    background: $dark-blue;
+    height: 12vh;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    .spacer{
+        flex: 1 1 auto;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .nav-item{
+        color: $light-grey;
+        margin-right: 5px;
+    }
+
+    .nav-item:hover, .nav-item.active{
+        color: $orange;
+    }
+}

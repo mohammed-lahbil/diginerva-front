@@ -1,4 +1,10 @@
 {
+    "header":{
+        "home": "Home",
+        "about": "About us",
+        "services": "Services",
+        "contact": "Contact"
+    },
     "pages": {
         "home" : {
             "title": "Digital Acceleration",
