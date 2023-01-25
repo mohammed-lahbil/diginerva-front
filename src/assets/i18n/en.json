@@ -5,6 +5,17 @@
         "services": "Services",
         "contact": "Contact"
     },
+    "footer":{
+        "desc": "Contact us to begin working on your",
+        "project": " project",
+        "copyright": "All rights reserved",
+        "send":"Send",
+        "useful-link":{
+            "terms": "Terms of use",
+            "policy": "Privacy policy",
+            "security":"Security"
+        }
+    },
     "pages": {
         "home" : {
             "title": "Digital Acceleration",

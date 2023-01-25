@@ -5,6 +5,17 @@
         "services": "Services",
         "contact": "Contact"
     },
+    "footer":{
+        "desc": "Contactez nous pour débuter votre",
+        "project": " projet",
+        "copyright": "Tous droits réservés",
+        "send":"Envoyer",
+        "useful-link":{
+            "terms": "Conditions d'utilisation",
+            "policy": "Politique de confidentialité",
+            "security":"Sécurité"
+        }
+    },
     "pages": {
         "home" : {
             "title": "Accélération Digitale",

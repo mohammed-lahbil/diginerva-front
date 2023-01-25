@@ -1,9 +1,9 @@
 <mat-drawer-container [hasBackdrop]="true">
     <mat-drawer #drawer id="side-nav" mode="push" style="display: flex; flex-direction: column;">
-        <a class="nav-item" mat-button routerLink="">{{ "header.home" | translate }}</a>
-        <a class="nav-item" mat-button routerLink="about">{{ "header.about" | translate }}</a>
-        <a class="nav-item" mat-button routerLink="services">{{ "header.services" | translate }}</a>
-        <a class="nav-item" mat-button routerLink="contact">{{ "header.contact" | translate }}</a>
+        <a class="nav-item" mat-button routerLink="">{{ "header.home" | translate }}</a><br>
+        <a class="nav-item" mat-button routerLink="about">{{ "header.about" | translate }}</a><br>
+        <a class="nav-item" mat-button routerLink="services">{{ "header.services" | translate }}</a><br>
+        <a class="nav-item" mat-button routerLink="contact">{{ "header.contact" | translate }}</a><br>
         <button class="nav-item" id="lang-item" mat-button [matMenuTriggerFor]="menu">{{ langUser | uppercase }}
             <mat-icon class="material-symbols-outlined">expand_more</mat-icon>
         </button>
@@ -24,8 +24,8 @@
                 <mat-icon class="material-symbols-outlined">expand_more</mat-icon>
             </button>
             <mat-menu #menu="matMenu" id="langMenu">
-                <button id="lang" mat-menu-item (click)="changeLang('en')">EN</button>
-                <button id="lang" mat-menu-item (click)="changeLang('fr')">FR</button>
+                <button mat-menu-item (click)="changeLang('en')">EN</button>
+                <button mat-menu-item (click)="changeLang('fr')">FR</button>
             </mat-menu>
         </mat-toolbar>
         <mat-toolbar class="navbar" *ngIf="pageWidth < 768">

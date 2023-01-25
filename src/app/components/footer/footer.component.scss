@@ -1,0 +1,64 @@
+@import "../../app.component.scss";
+.footer {
+    background: $dark-blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .footer-left{
+        margin-top: 2%;
+        margin-left: 5%;
+        color: $light-grey;
+        font-size: 2.5vw;
+        width: 35%;
+        .point{
+            color: $orange;
+        }
+    }
+
+    .footer-right{
+        .footer-form{
+            margin-top: 5%;
+            :host ::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field.ng-tns-c117-2.mdc-text-field--filled{
+                background-color: $dark-blue !important;
+                ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+                    background-color: $dark-blue;
+                }
+            }
+            .submit-form{
+                background: $orange;
+                color: $light-grey;
+            }
+        }
+    }
+}
+.lower-footer{
+    .navbar{
+        background: $dark-blue;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+        a{
+            text-decoration: none;
+        }
+    
+        .nav-item, .lang-item{
+            font-size: 1vw;
+            color: $light-grey;
+            margin-right: 5px;
+        }
+    
+        .nav-item:hover, .nav-item.active, .lang-item:hover, .lang-item.active{
+            color: $orange;
+            text-decoration: none;
+        }
+    
+        #lang-item{
+            flex-direction: row-reverse;
+        }
+
+        .copyrights{
+            color: $light-grey;
+            font-size: 1vw;
+        }
+    }
+}

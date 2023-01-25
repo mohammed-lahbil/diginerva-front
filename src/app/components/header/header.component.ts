@@ -17,7 +17,6 @@ export class HeaderComponent {
     this.langUser = this.translate.currentLang;
     this.pageWidth = window.innerWidth;
     this.pageHeight = window.innerHeight;
-    console.log(this.pageWidth)
   }
 
   changeLang(lang: string){
