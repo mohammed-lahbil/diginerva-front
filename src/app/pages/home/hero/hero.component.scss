@@ -1,0 +1,108 @@
+@import "../../../app.component.scss";
+
+.hero-content{
+    font-family: $primary-font;
+    background: $dark-blue;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    .left-side{
+        flex: 1;
+        width: 70%;
+        h1{
+            font-size: 7vw;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px $light-grey;
+            margin: 0;
+            padding: 75px 0px 0px 75px;
+        }
+        button{
+            font-size: 1vw;
+            margin-left: 75px;
+            margin-top: 50px;
+            font-weight: bold;
+            width: 200px;
+            height: 50px;
+            background: $orange;
+            color: $light-grey;
+        }
+    }
+
+    .right-side{
+        flex: 1;
+        position: relative;
+        width: 30%;
+        height: 400px;
+        .design-illustration{
+            background: #323749;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #323749;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            animation-name: float;
+            animation-duration: 4.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            z-index: 3;
+        }
+        .security-illustration{
+            background: #323749;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #323749;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+            animation-name: float;
+            animation-duration: 4.5s;
+            animation-delay: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            z-index: 2;
+        }
+        .digital-illustration{
+            background: #323749;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #323749;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+            animation-name: float;
+            animation-duration: 4.5s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            z-index: 1;
+        }
+    }
+
+    @media only screen and (max-width> 1420px) {
+        .hero-content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+  
+@keyframes float {
+    0% {
+        top: 0px;
+        left: 150px;
+    }
+    33% {
+        top: 150px;
+        left: 0px;
+    }
+    66%{
+        top: 150px;
+        left: 300px;
+    }
+    100% {
+        top: 0px;
+        left: 150px;
+    }
+}

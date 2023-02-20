@@ -17,11 +17,16 @@
     .footer-right{
         .footer-form{
             margin-top: 5%;
-            :host ::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field.ng-tns-c117-2.mdc-text-field--filled{
-                background-color: $dark-blue !important;
-                ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
-                    background-color: $dark-blue;
-                }
+            mat-label {
+                color: $light-grey;
+            }
+              
+            ::ng-deep.mat-form-field-underline {
+                background-color: $light-grey !important;
+            } 
+              
+            ::ng-deep.mat-form-field-ripple {
+                background-color: $orange !important;
             }
             .submit-form{
                 background: $orange;

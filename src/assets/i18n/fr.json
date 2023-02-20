@@ -1,4 +1,8 @@
 {
+    "common":{
+        "language": "Français",
+        "lang": "FR"
+    },
     "header":{
         "home": "Accueil",
         "about": "À propos",
@@ -14,6 +18,12 @@
             "terms": "Conditions d'utilisation",
             "policy": "Politique de confidentialité",
             "security":"Sécurité"
+        },
+        "form":{
+            "full_name": "Nom complet",
+            "phone_number": "Numéro de téléphone",
+            "email": "Email",
+            "message": "Message"
         }
     },
     "pages": {
