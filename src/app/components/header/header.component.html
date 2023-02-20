@@ -5,7 +5,7 @@
         <a class="nav-item" mat-button routerLink="services">{{ "header.services" | translate }}</a><br>
         <a class="nav-item" mat-button routerLink="contact">{{ "header.contact" | translate }}</a><br>
         <button class="nav-item" id="lang-item" mat-button [matMenuTriggerFor]="menu">{{ langUser | uppercase }}
-            <mat-icon class="material-symbols-outlined">expand_more</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" svgIcon="expand_more"></mat-icon>
         </button>
         <mat-menu #menu="matMenu">
             <button class="lang" mat-menu-item (click)="changeLang('en')">EN</button>
@@ -20,8 +20,8 @@
             <a class="nav-item" mat-button routerLink="about">{{ "header.about" | translate }}</a>
             <a class="nav-item" mat-button routerLink="services">{{ "header.services" | translate }}</a>
             <a class="nav-item" mat-button routerLink="contact">{{ "header.contact" | translate }}</a>
-            <button class="nav-item" id="lang-item" mat-button [matMenuTriggerFor]="menu">{{ langUser | uppercase }}
-                <mat-icon class="material-symbols-outlined">expand_more</mat-icon>
+            <button class="nav-item" id="lang-item" mat-button [matMenuTriggerFor]="menu">{{ "common.lang" | translate }}
+                <mat-icon aria-hidden="false" svgIcon="expand_more"></mat-icon>
             </button>
             <mat-menu #menu="matMenu" id="langMenu">
                 <button mat-menu-item (click)="changeLang('en')">EN</button>
@@ -31,7 +31,7 @@
         <mat-toolbar class="navbar" *ngIf="pageWidth < 768">
             <img src="../../../assets/media/logo-no-text.svg" alt="Logo" class="logo" routerLink="">
             <div class="spacer"></div>
-            <a class="mobile-menu" mat-raised-a (click)="drawer.toggle()"><mat-icon class="material-symbols-outlined">menu</mat-icon></a>
+            <a class="mobile-menu" mat-raised-a (click)="drawer.toggle()"><mat-icon aria-hidden="false" svgIcon="menu"></mat-icon></a>
         </mat-toolbar>
     </mat-drawer-content>
 </mat-drawer-container>

@@ -1,4 +1,8 @@
 {
+    "common":{
+        "language": "English",
+        "lang": "EN"
+    },
     "header":{
         "home": "Home",
         "about": "About us",
@@ -14,6 +18,12 @@
             "terms": "Terms of use",
             "policy": "Privacy policy",
             "security":"Security"
+        },
+        "form":{
+            "full_name": "Full name",
+            "phone_number": "Phone number",
+            "email": "Email",
+            "message": "Message"
         }
     },
     "pages": {

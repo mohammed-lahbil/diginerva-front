@@ -10,18 +10,19 @@ export class FooterComponent {
   langUser = '';
   pageWidth: any;
   pageHeight: any;
+  date: Date = new Date();
+  year: number = 0;
 
   constructor(private translate: TranslateService) {}
   
   ngOnInit(){
-    this.langUser = this.translate.currentLang === 'EN' ? 'English' : 'Français';
     this.pageWidth = window.innerWidth;
     this.pageHeight = window.innerHeight;
+    this.year = this.date.getFullYear();
   }
 
   changeLang(lang: string){
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
-    this.langUser = lang === 'EN' ? 'English' : 'Français';
   }
 }
