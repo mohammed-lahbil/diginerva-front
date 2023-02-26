@@ -22,6 +22,8 @@ import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './pages/home/hero/hero.component';
+import { MiniCardComponent } from './pages/home/mini-card/mini-card.component';
+import { MiniServicesCardsComponent } from './pages/home/mini-services-cards/mini-services-cards.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HeroComponent } from './pages/home/hero/hero.component';
     ServicesComponent,
     AboutUsComponent,
     FooterComponent,
-    HeroComponent
+    HeroComponent,
+    MiniCardComponent,
+    MiniServicesCardsComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +67,10 @@ export class AppModule {
     this.matIconRegistry.addSvgIcon('menu', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/menu.svg'));
     this.matIconRegistry.addSvgIcon('expand_more', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/expand_more.svg'));
     this.matIconRegistry.addSvgIcon('send', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/send.svg'));
+    this.matIconRegistry.addSvgIcon('blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/blur.svg'));
+    this.matIconRegistry.addSvgIcon('semi-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/semi-blur.svg'));
+    this.matIconRegistry.addSvgIcon('lens-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/lens-blur.svg'));
+    this.matIconRegistry.addSvgIcon('long_arrow', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/long_arrow.svg'));
   }
 }
 

@@ -24,6 +24,42 @@
     height: 12vh;
     margin: auto;
     padding-right: 5%;
+    span{
+        color: $light-grey;
+        font-size: 3vw;
+        .dot{
+            color: $orange;
+        }
+    }
+    .logo-animation{
+        margin-left: 5%;
+        width: 3%;
+        height: 50%;
+        .first{
+            width: 75%;
+            background: $orange;
+            height: 19%;
+            margin-top: 10%;
+            border-radius: 3px;
+            animation: first-animation 3s ease-in-out infinite;
+        }
+        .second{
+            width: 50%;
+            background: $light-grey;
+            height: 19%;
+            margin-top: 10%;
+            border-radius: 3px;
+            animation: second-animation 3s ease-in-out infinite;
+        }
+        .third{
+            width: 90%;
+            background: $light-blue;
+            height: 19%;
+            margin-top: 10%;
+            border-radius: 3px;
+            animation: third-animation 3s ease-in-out infinite;
+        }
+    }
     
     .spacer{
         flex: 1 1 auto;
@@ -66,4 +102,58 @@
         cursor: pointer;
     }
 
+}
+
+@keyframes first-animation {
+    0%{
+        width: 75%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 90%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes second-animation {
+    0%{
+        width: 50%;
+    }
+    25%{
+        width: 75%;
+    }
+    50%{
+        width: 90%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes third-animation {
+    0%{
+        width: 90%;
+    }
+    25%{
+        width: 75%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 90%;
+    }
 }
