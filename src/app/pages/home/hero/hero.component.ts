@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-hero',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent {
+  url = 'https://www.youtube.com/embed/daZnG9nwKNI';
 
+  @ViewChild('videoDialog')
+  videoDialog!: TemplateRef<any>;
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(this.videoDialog);
+    dialogRef.afterClosed().subscribe();
+  }
+
+  onClose() {
+    this.dialog.closeAll();
+  }
 }

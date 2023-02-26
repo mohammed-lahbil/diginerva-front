@@ -24,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './pages/home/hero/hero.component';
 import { MiniCardComponent } from './pages/home/mini-card/mini-card.component';
 import { MiniServicesCardsComponent } from './pages/home/mini-services-cards/mini-services-cards.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { MiniServicesCardsComponent } from './pages/home/mini-services-cards/min
     MatToolbarModule,
     MatButtonModule,
     MatGridListModule,
+    MatDialogModule,
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
@@ -71,6 +73,8 @@ export class AppModule {
     this.matIconRegistry.addSvgIcon('semi-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/semi-blur.svg'));
     this.matIconRegistry.addSvgIcon('lens-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/lens-blur.svg'));
     this.matIconRegistry.addSvgIcon('long_arrow', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/long_arrow.svg'));
+    this.matIconRegistry.addSvgIcon('play',this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/play.svg'));
+    this.matIconRegistry.addSvgIcon('close',this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/close.svg'));
   }
 }
 
