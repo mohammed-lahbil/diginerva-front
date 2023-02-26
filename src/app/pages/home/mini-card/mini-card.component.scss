@@ -1,0 +1,41 @@
+@import "../../../app.component.scss";
+.card{
+    margin: auto;
+    width: 80%;
+    background: $light-grey;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    height: 40vh;
+    border-radius: 15px;
+    padding: 15px;
+    img{
+        flex: 1;
+        width: 19rem;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        flex: 2;
+        text-align: justify;
+        h2{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        p{
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        button{
+            background: $dark-blue;
+            height: 50px;
+            width: 200px;
+            color: $orange;
+        }
+    }
+}

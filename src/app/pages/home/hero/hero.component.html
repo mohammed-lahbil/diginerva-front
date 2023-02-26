@@ -1,13 +1,23 @@
 <div class="hero-content">
     <div class="left-side">
-        <h1>DiGiTAL<br>ACCELERATION</h1>
-        <button class="first-btn" mat-raised-button>Devenir Client</button>
-        <button class="second-btn" mat-raised-button>Sponsoriser-nous</button>
-        <button class="first-btn" mat-raised-button>Rejoignez-nous</button>
-    </div>
-    <div class="right-side">
-        <img class="design-illustration" src="../../../../assets/media/home/hero/design-illustration.svg" /><br>
-        <img class="security-illustration" src="../../../../assets/media/home/hero/security-illustration.svg" />
-        <img class="digital-illustration" src="../../../../assets/media/home/hero/digital-illustration.svg" />
+        <div class="title" style="--stacks: 3;">
+            <h1 style="--index: 0;">DiGiTAL<br>ACCELERATION</h1>
+            <h1 style="--index: 1;">DiGiTAL<br>ACCELERATION</h1>
+            <h1 style="--index: 2;">DiGiTAL<br>ACCELERATION</h1>
+        </div>
+        <div>
+            <button class="first-btn" mat-raised-button>{{ "pages.home.btns.become_client" | translate }}</button>
+            <button class="second-btn" mat-raised-button>{{ "pages.home.btns.sponsor_us" | translate }}</button>
+            <button class="first-btn" mat-raised-button>{{ "pages.home.btns.join_us" | translate }}</button>
+        </div>
     </div>
 </div>
+
+<!--
+    [ngStyle]="{
+    'background-image': 'url(../../../assets/media/home/hero/background.svg)',
+    'background-size': 'contain',
+    'background-position': 'bottom',
+    'background-repeat': 'no-repeat'
+    }"
+-->

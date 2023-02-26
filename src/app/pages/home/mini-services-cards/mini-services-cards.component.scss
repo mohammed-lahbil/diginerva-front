@@ -1,0 +1,60 @@
+@import "../../../app.component.scss";
+.service-card{
+    margin: auto;
+    width: 60%;
+    background: $light-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: fit-content;
+    border-radius: 15px;
+    
+    padding: 15px;
+    &:hover{
+        transform: scale(1.1);
+        background: $orange;
+        .info{
+            h3, p{
+                color: $light-grey;
+            }
+            button{
+                color: $light-grey;
+            }
+        }
+        img{
+            background-color: $orange;
+        }
+    }
+    img{
+        flex: 1;
+        width: 150px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        flex: 2;
+        h3{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        p{
+            text-align: justify;
+            max-height: 200px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        button{
+            background: $dark-blue;
+            height: 50px;
+            width: 150px;
+            color: $orange;
+        }
+    }
+}
