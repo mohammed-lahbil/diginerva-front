@@ -1,23 +1,26 @@
 @import "../../app.component.scss";
 .home{
-    background: $dark-blue;
     .info{
         display: flex;
         flex-wrap: wrap;
-        
+        background: $light-grey;
     }
-    .info > *{
+    .info > * {
         flex-grow: 1;
         flex-basis: 50%;
     }
     h2{
-        color: $light-grey;
-        margin-top: 5%;
-        margin-bottom: 2%;
-        margin-left: 10%;
+        background-color: $light-grey;
+        color: $dark-blue;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 10%;
         font-size: 36px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .mini-services{
+        background: $light-grey;
         display: flex;
         flex-wrap: wrap;
     }

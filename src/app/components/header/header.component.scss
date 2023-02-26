@@ -35,6 +35,8 @@
         margin-left: 5%;
         width: 3%;
         height: 50%;
+        display: flex;
+        flex-direction: column;
         .first{
             width: 75%;
             background: $orange;

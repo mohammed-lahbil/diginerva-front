@@ -2,7 +2,7 @@
 .service-card{
     margin: auto;
     width: 60%;
-    background: $light-grey;
+    background: var(white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,9 +10,12 @@
     margin-bottom: 30px;
     height: fit-content;
     border-radius: 15px;
-    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
     padding: 15px;
+
     &:hover{
+        transform: rotateY(360deg);
         transform: scale(1.1);
         background: $orange;
         .info{
@@ -29,7 +32,7 @@
     }
     img{
         flex: 1;
-        width: 150px;
+        width: 10vw;
     }
     .info{
         display: flex;
@@ -39,6 +42,7 @@
         flex: 2;
         h3{
             margin-top: 5px;
+            font-size: 1rem;
             margin-bottom: 5px;
         }
         p{
