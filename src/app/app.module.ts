@@ -25,6 +25,11 @@ import { HeroComponent } from './pages/home/hero/hero.component';
 import { MiniCardComponent } from './pages/home/mini-card/mini-card.component';
 import { MiniServicesCardsComponent } from './pages/home/mini-services-cards/mini-services-cards.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { JoinUsComponent } from './pages/home/join-us/join-us.component';
+import { OurTalentsComponent } from './pages/home/our-talents/our-talents.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { OurArticlesComponent } from './pages/home/our-articles/our-articles.component';
+import { OurNewsComponent } from './pages/home/our-news/our-news.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     FooterComponent,
     HeroComponent,
     MiniCardComponent,
-    MiniServicesCardsComponent
+    MiniServicesCardsComponent,
+    JoinUsComponent,
+    OurTalentsComponent,
+    OurArticlesComponent,
+    OurNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +56,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatDialogModule,
     MatInputModule,
     MatFormFieldModule,
+    MatDividerModule,
     MatIconModule,
     MatMenuModule,
     MatSidenavModule,

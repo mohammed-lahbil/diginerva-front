@@ -62,6 +62,14 @@
                     "cybersecurity": "Modern threats are complex and must be taken very seriously. A single data breach or ransomware attack can cause enormous financial, legal and reputational damage. To help our clients protect themselves, Offensive security consultants are ready to audit your information system.",
                     "digital_marketing": "Digital marketing changes everything : commerce, culture and community. We work right at the meeting point of new tech and new ideas to create strategic and powerful business channels and campaigns that take you to the right audience, growing your brand and bringing revenue home."
                 }
+            },
+            "join_us":{
+                "description": "Join a large community of talents and boost your career.",
+                "btn":"Join Us"
+            },
+            "our_talents":{
+                "title": "Our Talents",
+                "description": "Our team is composed of a diverse group of talents with a range of business, technical and functional abilities. We strive to create innovative and creative solutions to achieving the best possible outcomes for our clients. "
             }
         }
     }

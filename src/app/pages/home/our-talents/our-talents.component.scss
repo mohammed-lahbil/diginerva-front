@@ -1,0 +1,43 @@
+@import "../../../app.component.scss";
+
+.talents{
+    .our-talents{
+        padding: 50px;
+        max-width: 100%;
+        margin: auto;
+        box-shadow: $orange 0px 20px 30px -10px;
+        h2, p{
+            color: $light-grey;
+            text-align: center;
+        }
+    }
+    .join-us{
+        height: fit-content;
+        display: flex;
+        margin-bottom: 50px;
+        padding-left: 100px;
+        align-items: center;
+        .left-side{
+            flex: 1;
+            h2{
+                color: $light-grey;
+            }
+            .join-btn{
+                font-size: 1vw;
+                font-weight: bold;
+                width: 200px;
+                height: 50px;
+                background: $orange;
+                color: $light-grey;
+            }
+        }
+        .right-side{
+            padding-left: 150px;
+            flex: 1;
+            img{
+                width: 19vw;
+                max-width: 250px;
+            }
+        }
+    }
+}
