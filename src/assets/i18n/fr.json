@@ -62,6 +62,14 @@
                     "cybersecurity": "Les menaces modernes sont complexes et doivent être prises très au sérieux. Une seule violation de données ou une attaque de ransomware peut causer d'énormes dommages financiers, juridiques et de réputation. Pour aider nos clients à se protéger, des consultants en sécurité Offensive sont prêts pour auditer votre système d’information.",
                     "digital_marketing": "Le marketing digital change tout : commerce, culture et communauté. Nous travaillons au point de rencontre des nouvelles technologies et des nouvelles idées, pour créer des canaux et des campagnes commerciales stratégiques et puissants qui vous amènent au bon public, en développant votre marque et en apportant des revenus."
                 }
+            },
+            "join_us":{
+                "description": "Rejoignez une grande communauté de talents et boostez votre carrière.",
+                "btn":"Rejoignez-nous"
+            },
+            "our_talents":{
+                "title": "Nos Talents",
+                "description": "Notre équipe est composée d'un groupe diversifié de talents possédant un éventail de compétences commerciales, techniques et fonctionnelles. Nous nous efforçons de créer des solutions innovantes et créatives pour obtenir les meilleurs résultats possibles pour nos clients. "
             }
         }
     }
