@@ -70,6 +70,10 @@
             "our_talents":{
                 "title": "Our Talents",
                 "description": "Our team is composed of a diverse group of talents with a range of business, technical and functional abilities. We strive to create innovative and creative solutions to achieving the best possible outcomes for our clients. "
+            },
+            "our_articles":{
+                "title": "Our Articles",
+                "read_more": "Read more"
             }
         }
     }

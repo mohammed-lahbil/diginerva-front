@@ -6,31 +6,70 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-articles.component.scss']
 })
 export class OurArticlesComponent {
+  images: any[] = [];
+
+  responsiveOptions: any[] = [
+      {
+        breakpoint: '1024px',
+        numVisible: 5
+      },
+      {
+        breakpoint: '896px',
+        numVisible: 4
+      },
+      {
+        breakpoint: '768px',
+        numVisible: 3
+      },
+      {
+        breakpoint: '614px',
+        numVisible: 2
+      },
+      {
+        breakpoint: '460px',
+        numVisible: 1
+      }
+  ];
+
   tab = [
     { 
-      'id': 'slide-1',
+      'title': 'Article 1',
       'path': '../../../../assets/media/home/articles/article-1.jpg',
-      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-1.jpg',
+      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'articlePath': 'https://www.google.com'
     },
     {
-      'id': 'slide-2',
+      'title': 'Article 2',
       'path': '../../../../assets/media/home/articles/article-2.jpg',
-      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-2.jpg',
+      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'articlePath': 'https://www.google.com'
     },
     { 
-      'id': 'slide-3',
+      'title': 'Article 3',
       'path': '../../../../assets/media/home/articles/article-3.jpg',
-      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-3.jpg',
+      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'articlePath': 'https://www.google.com'
     },
     { 
-      'id': 'slide-4',
+      'title': 'Article 4',
       'path': '../../../../assets/media/home/articles/article-4.jpg',
-      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-4.jpg',
+      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'articlePath': 'https://www.google.com'
     },
     { 
-      'id': 'slide-5',
+      'title': 'Article 5',
       'path': '../../../../assets/media/home/articles/article-5.jpg',
-      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-5.jpg',
+      'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'articlePath': 'https://www.google.com'
     }
   ]
+
+  readArticle(path: string){
+    window.open(path);
+  }
 }

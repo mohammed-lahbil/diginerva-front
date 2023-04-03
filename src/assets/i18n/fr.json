@@ -70,6 +70,10 @@
             "our_talents":{
                 "title": "Nos Talents",
                 "description": "Notre équipe est composée d'un groupe diversifié de talents possédant un éventail de compétences commerciales, techniques et fonctionnelles. Nous nous efforçons de créer des solutions innovantes et créatives pour obtenir les meilleurs résultats possibles pour nos clients. "
+            },
+            "our_articles":{
+                "title": "Nos Articles",
+                "read_more": "Lire la suite"
             }
         }
     }
