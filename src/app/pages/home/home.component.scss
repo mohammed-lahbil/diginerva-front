@@ -31,6 +31,9 @@
         padding-top: 50px;
     }
     .articles{
-        
+        background: $dark-blue;
+        h2{
+            color: $light-grey;
+        }
     }
 }
