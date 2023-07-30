@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed, fakeAsync, tick, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FooterComponent } from './footer.component';
 import { TranslateFakeLoader, TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
@@ -60,7 +60,8 @@ describe('FooterComponent', () => {
   });
 
   it('should change language on menu item click', waitForAsync(() => {
-    spyOn(translateService, 'use').and.callThrough();
+    // Mock the translateService.use method
+    const useSpy = jest.spyOn(translateService, 'use');
 
     // Choose one of the language menu items
     const langMenuItem = fixture.debugElement.query(By.css('#lang-item'));
@@ -78,7 +79,7 @@ describe('FooterComponent', () => {
       langButton.nativeElement.click();
 
       // Check if the translateService.use method is called with the correct argument
-      expect(translateService.use).toHaveBeenCalledWith('en'); // Replace 'en' with the desired language code
+      expect(useSpy).toHaveBeenCalledWith('en'); // Replace 'en' with the desired language code
     });
   }));
 

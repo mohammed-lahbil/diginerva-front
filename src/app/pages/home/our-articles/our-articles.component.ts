@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-articles.component.scss']
 })
 export class OurArticlesComponent {
-  images: any[] = [];
+  images = [];
 
-  responsiveOptions: any[] = [
+  responsiveOptions = [
       {
         breakpoint: '1024px',
         numVisible: 5
@@ -32,7 +32,7 @@ export class OurArticlesComponent {
   ];
 
   tab = [
-    { 
+    {
       'title': 'Article 1',
       'path': '../../../../assets/media/home/articles/article-1.jpg',
       'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-1.jpg',
@@ -46,21 +46,21 @@ export class OurArticlesComponent {
       'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       'articlePath': 'https://www.google.com'
     },
-    { 
+    {
       'title': 'Article 3',
       'path': '../../../../assets/media/home/articles/article-3.jpg',
       'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-3.jpg',
       'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       'articlePath': 'https://www.google.com'
     },
-    { 
+    {
       'title': 'Article 4',
       'path': '../../../../assets/media/home/articles/article-4.jpg',
       'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-4.jpg',
       'caption': 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       'articlePath': 'https://www.google.com'
     },
-    { 
+    {
       'title': 'Article 5',
       'path': '../../../../assets/media/home/articles/article-5.jpg',
       'thumbnails': '../../../../assets/media/home/articles/thumbnails/article-5.jpg',

@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./mini-card.component.scss']
 })
 export class MiniCardComponent {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() pathImage: string = '';
-  @Input() left: boolean = false;
-  @Input() right: boolean = false;
+  @Input() title = '';
+  @Input() description = '';
+  @Input() pathImage = '';
+  @Input() left = false;
+  @Input() right = false;
 }

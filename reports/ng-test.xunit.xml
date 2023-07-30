@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="25" failures="0" errors="0" time="21.118">
+  <testsuite name="OurArticlesComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:28" time="5.215" tests="2">
+    <testcase classname="OurArticlesComponent should create" name="OurArticlesComponent should create" time="0.231">
+    </testcase>
+    <testcase classname="OurArticlesComponent should open the article link in a new window" name="OurArticlesComponent should open the article link in a new window" time="0.069">
+    </testcase>
+  </testsuite>
+  <testsuite name="HeaderComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:28" time="6.012" tests="3">
+    <testcase classname="HeaderComponent should create" name="HeaderComponent should create" time="0.521">
+    </testcase>
+    <testcase classname="HeaderComponent should update pageWidth when window is resized" name="HeaderComponent should update pageWidth when window is resized" time="0.415">
+    </testcase>
+    <testcase classname="HeaderComponent should set default lang and use lang from TranslateService" name="HeaderComponent should set default lang and use lang from TranslateService" time="0.072">
+    </testcase>
+  </testsuite>
+  <testsuite name="AppComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:28" time="6.132" tests="1">
+    <testcase classname="AppComponent should create the app" name="AppComponent should create the app" time="0.492">
+    </testcase>
+  </testsuite>
+  <testsuite name="MiniServicesCardsComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:28" time="6.151" tests="1">
+    <testcase classname="MiniServicesCardsComponent should create" name="MiniServicesCardsComponent should create" time="1.542">
+    </testcase>
+  </testsuite>
+  <testsuite name="OurTalentsComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:28" time="7.23" tests="1">
+    <testcase classname="OurTalentsComponent should create" name="OurTalentsComponent should create" time="1.741">
+    </testcase>
+  </testsuite>
+  <testsuite name="HeroComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:28" time="7.545" tests="4">
+    <testcase classname="HeroComponent should create" name="HeroComponent should create" time="1.912">
+    </testcase>
+    <testcase classname="HeroComponent should open a dialog" name="HeroComponent should open a dialog" time="0.059">
+    </testcase>
+    <testcase classname="HeroComponent should subscribe to the afterClosed event of the dialog" name="HeroComponent should subscribe to the afterClosed event of the dialog" time="0.081">
+    </testcase>
+    <testcase classname="HeroComponent should close all open dialogs" name="HeroComponent should close all open dialogs" time="0.046">
+    </testcase>
+  </testsuite>
+  <testsuite name="MiniCardComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:34" time="3.029" tests="1">
+    <testcase classname="MiniCardComponent should create" name="MiniCardComponent should create" time="0.184">
+    </testcase>
+  </testsuite>
+  <testsuite name="AboutUsComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:34" time="2.964" tests="1">
+    <testcase classname="AboutUsComponent should create" name="AboutUsComponent should create" time="0.137">
+    </testcase>
+  </testsuite>
+  <testsuite name="ServicesComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:34" time="2.97" tests="1">
+    <testcase classname="ServicesComponent should create" name="ServicesComponent should create" time="0.144">
+    </testcase>
+  </testsuite>
+  <testsuite name="OurNewsComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:35" time="2.747" tests="1">
+    <testcase classname="OurNewsComponent should create" name="OurNewsComponent should create" time="0.123">
+    </testcase>
+  </testsuite>
+  <testsuite name="FooterComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:28" time="9.463" tests="4">
+    <testcase classname="FooterComponent should create" name="FooterComponent should create" time="2.462">
+    </testcase>
+    <testcase classname="FooterComponent should set initial values for contactForm controls" name="FooterComponent should set initial values for contactForm controls" time="0.32">
+    </testcase>
+    <testcase classname="FooterComponent should set year correctly" name="FooterComponent should set year correctly" time="0.243">
+    </testcase>
+    <testcase classname="FooterComponent should change language on menu item click" name="FooterComponent should change language on menu item click" time="0.502">
+    </testcase>
+  </testsuite>
+  <testsuite name="ContactComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:36" time="2.4" tests="1">
+    <testcase classname="ContactComponent should create" name="ContactComponent should create" time="0.11">
+    </testcase>
+  </testsuite>
+  <testsuite name="HomeComponent" errors="0" failures="0" skipped="0" timestamp="2023-07-30T21:01:37" time="6.542" tests="4">
+    <testcase classname="HomeComponent should create" name="HomeComponent should create" time="0.466">
+    </testcase>
+    <testcase classname="HomeComponent should return 0 when the list length is divisible by 3" name="HomeComponent should return 0 when the list length is divisible by 3" time="0.104">
+    </testcase>
+    <testcase classname="HomeComponent should return 2 when the list length is 2 more than a multiple of 3" name="HomeComponent should return 2 when the list length is 2 more than a multiple of 3" time="0.154">
+    </testcase>
+    <testcase classname="HomeComponent should return 1 when the list length is 1 more than a multiple of 3" name="HomeComponent should return 1 when the list length is 1 more than a multiple of 3" time="0.114">
+    </testcase>
+  </testsuite>
+</testsuites>

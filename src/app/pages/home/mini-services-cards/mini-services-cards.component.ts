@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./mini-services-cards.component.scss']
 })
 export class MiniServicesCardsComponent {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() pathImage: string = '';
+  @Input() title = '';
+  @Input() description = '';
+  @Input() pathImage = '';
 }

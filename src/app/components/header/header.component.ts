@@ -1,4 +1,4 @@
-import { Component, Host, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,10 +6,10 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   langUser = '';
-  pageWidth: any;
-  pageHeight: any;
+  pageWidth = 0;
+  pageHeight = 0;
 
   constructor(private translate: TranslateService) {}
 
@@ -28,5 +28,6 @@ export class HeaderComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.pageWidth = window.innerWidth;
+    console.log(event);
   }
 }

@@ -33,7 +33,7 @@ describe('OurArticlesComponent', () => {
   });
 
   it('should open the article link in a new window', () => {
-    const windowOpenSpy = spyOn(window, 'open');
+    const windowOpenSpy = jest.spyOn(window, 'open');
 
     // Choose one of the articles to test the readArticle function
     const article = component.tab[0];

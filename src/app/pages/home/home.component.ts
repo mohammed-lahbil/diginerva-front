@@ -9,13 +9,13 @@ import { MiniCard } from '../../models/miniCard';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  aboutUsImage: string = '../../../assets/media/home/about.svg';
-  ourStrategyImage: string = '../../../assets/media/home/strategy.svg';
+  aboutUsImage = '../../../assets/media/home/about.svg';
+  ourStrategyImage = '../../../assets/media/home/strategy.svg';
 
   miniServices: MiniCard[] = MiniServicesData;
   miniInfos: MiniCard[] = MiniInfosData;
 
-  calculElements(list: any){
+  calculElements(list: number[]){
     return list.length%3;
   }
 }

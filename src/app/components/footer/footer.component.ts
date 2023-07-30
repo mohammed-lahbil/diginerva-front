@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -7,12 +7,12 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
   langUser = '';
-  pageWidth: any;
-  pageHeight: any;
+  pageWidth = 0;
+  pageHeight = 0;
   date: Date = new Date();
-  year: number = 0;
+  year = 0;
   contactForm: FormGroup = new FormGroup({});
 
   constructor(private translate: TranslateService) {}
