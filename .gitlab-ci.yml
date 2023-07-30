@@ -5,5 +5,5 @@ include:
 
 variables:
   NG_BUILD_ARGS: "build"
-  NG_TEST_ARGS: "test --code-coverage"
+  NG_TEST_ARGS: "test --coverage"
   NG_SBOM_DISABLED: "true"
