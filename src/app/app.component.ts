@@ -8,7 +8,6 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class AppComponent {
   langUser : any;
-  title = 'diginerva';
   constructor(private translate: TranslateService) {
     this.langUser = this.translate.getBrowserLang();
     this.translate.setDefaultLang(this.langUser);

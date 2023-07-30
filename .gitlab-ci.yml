@@ -1,0 +1,9 @@
+include:
+  - project: 'to-be-continuous/angular'
+    ref: '4.5.0'
+    file: '/templates/gitlab-ci-angular.yml'
+
+variables:
+  NG_BUILD_ARGS: "build"
+  NG_TEST_ARGS: "test --code-coverage"
+  NG_SBOM_DISABLED: "true"

@@ -5,22 +5,22 @@
             <p>DIGINERVA<span class="point">.</span></p>
         </div>
         <div class="footer-right">
-            <form class="footer-form">
+            <form class="footer-form" [formGroup]="contactForm">
                 <mat-form-field style="width: 80%;">
                     <mat-label>{{ "footer.form.full_name" | translate}}</mat-label>
-                    <input matInput>
+                    <input matInput formControlName="fullName">
                 </mat-form-field><br>
                 <mat-form-field style="width: 37%; margin-right: 3%;">
                     <mat-label>{{ "footer.form.email" | translate}}</mat-label>
-                    <input matInput>
+                    <input matInput formControlName="email">
                 </mat-form-field>
                 <mat-form-field style="width: 37%; margin-left: 3%;">
                     <mat-label>{{ "footer.form.phone_number" | translate}}</mat-label>
-                    <input matInput>
+                    <input matInput formControlName="phone">
                 </mat-form-field><br>
                 <mat-form-field style="width: 80%;">
                     <mat-label>{{ "footer.form.message" | translate}}</mat-label>
-                    <textarea matInput></textarea>
+                    <textarea matInput formControlName="message"></textarea>
                 </mat-form-field><br>
                 <button mat-button class="submit-form">
                     {{ "footer.send" | translate}}

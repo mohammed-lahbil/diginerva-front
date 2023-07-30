@@ -12,7 +12,7 @@ export class HeaderComponent {
   pageHeight: any;
 
   constructor(private translate: TranslateService) {}
-  
+
   ngOnInit(){
     this.langUser = this.translate.currentLang;
     this.pageWidth = window.innerWidth;

@@ -13,8 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatIconRegistry } from '@angular/material/icon';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'
@@ -30,6 +29,7 @@ import { OurArticlesComponent } from './pages/home/our-articles/our-articles.com
 import { OurNewsComponent } from './pages/home/our-news/our-news.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { OurTalentsComponent } from './pages/home/our-talents/our-talents.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -54,8 +54,12 @@ import { OurTalentsComponent } from './pages/home/our-talents/our-talents.compon
     MatGridListModule,
     MatDialogModule,
     MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatFormFieldModule,
     MatDividerModule,
+    BrowserAnimationsModule,
+    BrowserModule,
     MatIconModule,
     GalleriaModule,
     MatMenuModule,
@@ -74,7 +78,7 @@ import { OurTalentsComponent } from './pages/home/our-talents/our-talents.compon
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
     this.matIconRegistry.addSvgIcon('menu', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/menu.svg'));
     this.matIconRegistry.addSvgIcon('expand_more', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/expand_more.svg'));

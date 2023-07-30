@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MiniCardComponent } from './mini-card.component';
+import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 describe('MiniCardComponent', () => {
   let component: MiniCardComponent;
@@ -8,7 +9,15 @@ describe('MiniCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MiniCardComponent ]
+      declarations: [ MiniCardComponent ],
+      imports:[
+        TranslateModule.forRoot({
+          loader: {
+            provide: TranslateLoader,
+            useClass: TranslateFakeLoader
+          }
+        }),
+      ]
     })
     .compileComponents();
 
