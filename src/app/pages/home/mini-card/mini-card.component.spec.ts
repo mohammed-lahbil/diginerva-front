@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MiniCardComponent } from './mini-card.component';
 import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
-
 describe('MiniCardComponent', () => {
   let component: MiniCardComponent;
   let fixture: ComponentFixture<MiniCardComponent>;
@@ -28,5 +27,11 @@ describe('MiniCardComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+  it('should apply flex-direction: column for screen width < 525px ', ()=>{
+    (window as any).innerWidth = 525;
+    fixture.detectChanges();
+    const infoElement = fixture.nativeElement.querySelector('.card');
+    expect(window.getComputedStyle(infoElement).flexDirection).not.toBe('row');
   });
 });
