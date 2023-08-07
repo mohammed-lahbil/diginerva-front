@@ -72,8 +72,6 @@ export class HeaderComponent implements OnInit {
   }
 
   
-
-
   ngOnInit(){
     this.langUser = this.translate.currentLang;
     this.pageWidth = window.innerWidth;
