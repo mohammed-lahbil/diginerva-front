@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HomeComponent } from './home.component';
 import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HeroComponent } from './hero/hero.component';
@@ -67,4 +66,11 @@ describe('HomeComponent', () => {
 
     expect(result).toEqual(1);
   });
+  it('should apply flex-direction: column for screen width < 850px ', ()=>{
+    (window as any).innerWidth = 850;
+    fixture.detectChanges();
+    const infoElement = fixture.nativeElement.querySelector('.info');
+    expect(window.getComputedStyle(infoElement).flexDirection).not.toBe('row');
+  })
+
 });

@@ -30,6 +30,7 @@ import { OurNewsComponent } from './pages/home/our-news/our-news.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { OurTalentsComponent } from './pages/home/our-talents/our-talents.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LayoutModule } from '@angular/cdk/layout'; // Import the LayoutModule
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSidenavModule,
     AppRoutingModule,
     HttpClientModule,
+    LayoutModule, 
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,

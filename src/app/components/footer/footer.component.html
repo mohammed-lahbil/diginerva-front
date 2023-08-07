@@ -1,4 +1,4 @@
-<div>
+<div class="footer-container">
     <div class="footer">
         <div class="footer-left">
             <p>{{ "footer.desc" | translate }}<strong>{{ "footer.project" | translate }}</strong><strong class="point">.</strong></p>
@@ -31,14 +31,14 @@
     </div>
     <div class="lower-footer">
         <mat-toolbar class="navbar">
-            <button class="lang-item" id="lang-item" mat-button [matMenuTriggerFor]="menu">{{ "common.language" | translate }}
+            <button class="lang-item" id="lang_item" mat-button [matMenuTriggerFor]="menu">{{ "common.language" | translate }}
                 <mat-icon aria-hidden="false" aria-label="Example home icon" svgIcon="expand_more"></mat-icon>
             </button>
             <mat-menu #menu="matMenu" id="langMenu">
                 <button id="lang" mat-menu-item (click)="changeLang('en')">EN</button>
                 <button id="lang" mat-menu-item (click)="changeLang('fr')">FR</button>
             </mat-menu>
-            <div>
+            <div class="navbar-items">
                 <a class="nav-item" mat-button routerLink="">{{ "footer.useful-link.terms" | translate }}</a>
                 <a class="nav-item" mat-button routerLink="about">{{ "footer.useful-link.policy" | translate }}</a>
                 <a class="nav-item" mat-button routerLink="services">{{ "footer.useful-link.security" | translate }}</a>
