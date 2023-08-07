@@ -1,28 +1,171 @@
 @import "../../app.component.scss";
+    
+
 #side-nav{
     background: $dark-blue;
     a{
         text-decoration: none;
     }
-
-    .nav-item{
+      
+    ::ng-deep .mat-mdc-button {
+        border-radius: 0 !important; /* To remove the border radius */
+        padding: 0;
+      }
+    
+      ::ng-deep #mat-mdc-button\ custom-button {
+        --mat-mdc-button-persistent-ripple-color: transparent;
+        --mat-mdc-button-ripple-color: transparent;
         color: $light-grey;
-        margin-right: 5px;
+        padding-right: 45px;
+            text-decoration: none;
+            position: relative; 
+            width: calc(100% + 37px);
+            margin-left: -38px;
+            transition: 0.2s;
+
+        &:hover {
+            background-color: #292e3d;
+            color: $orange; 
+            
+          }
+      
+          &:active {
+              background-color: #292e3d;
+              color: $orange; 
+            }
     }
 
-    .nav-item:hover, .nav-item.active{
-        color: $orange;
-        text-decoration: none;
-    }
+    .nav-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+
+        width: 100%;
+
+        .nav-item {
+            color: $light-grey;
+            //margin-right: 5px;
+            padding-right: 45px;
+            text-decoration: none;
+            position: relative; 
+
+            width: calc(100% + 30px); /* Increase the width to cover the animation distance */
+            margin-left: -30px;
+            
+            transition: 0.2s;
+              
+            
+            &:hover {
+              background-color: #292e3d;
+              color: $orange; 
+              
+            }
+        
+            &:active {
+                background-color: #292e3d;
+                color: $orange; 
+              }
+              
+            }
+
+            .active {
+                --mat-mdc-button-persistent-ripple-color: #000;
+                --mat-mdc-button-ripple-color: rgba(0, 0, 0, 0.1);
+                background-color: #292e3d;
+              }
+            
+    }  
+    
+    .no-scroll {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+      }
+  
 
     #lang-item{
         flex-direction: row-reverse;
     }
+    &.mat-drawer-push {
+        left: auto;
+        right: 0; 
+      }
 }
+
+
+
+mat-drawer {
+    a:first-of-type{
+        margin-top: 60px;
+    }
+    mat-menu{
+        margin-top: 50px;
+    }
+}
+
+::ng-deep .mat-drawer-inner-container{
+
+    overflow: hidden !important;
+}
+
+
+mat-drawer-content{
+    height: 100% !important;
+
+ }
+
+ ::ng-deep .mat-mdc-icon-button{
+    background-color: $dark-blue !important;
+    --mdc-ripple-color: transparent;
+    --mdc-ripple-hover-opacity: 0;
+    --mat-mdc-button-persistent-ripple-color: transparent;
+    --mat-mdc-button-ripple-color: transparent;
+}
+
+.mat-drawer-push {
+
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        //right: 10px;
+        z-index: 1;
+        color: $light-grey;
+        background: $dark-blue !important;
+        display: none;
+    }
+
+    .close-button:hover, .close-button.active{
+        color: $orange;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex; // Show the menu button by default
+    }
+
+    &.mat-drawer-opened {
+        .mobile-menu {
+            display: none; // Hide the menu button when the drawer is open
+        }
+
+        .close-button {
+            display: flex; // Show close button when the drawer is open
+        }
+    }
+}
+
+
+
+
+
 .navbar {
+  
+
     margin-bottom: 12vh;
     background: $dark-blue;
-    height: 12vh;
     margin: auto;
     padding-right: 5%;
     .logo-text{
@@ -94,7 +237,7 @@
     #lang-item{
         flex-direction: row-reverse;
     }
-
+      
     .mobile-menu{
         background: $dark-blue;
         color: $light-grey;
@@ -160,3 +303,59 @@
         width: 90%;
     }
 }
+
+
+
+/* media query for mobile screens */
+ 
+
+  @media (max-width: 1024px) {
+
+    :host ::ng-deep .mat-drawer-container {
+        display: unset;
+      }
+
+      ::ng-deep .mat-drawer-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+    mat-drawer-content {
+        height: 3.3em !important;
+        position: sticky;
+        position: -webkit-sticky;
+      }
+
+      mat-drawer-container {
+        position: inherit !important ;
+      }
+      
+    .mat-drawer {
+        width: 170px;
+        padding-bottom: 15px;
+      }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .navbar .logo-animation{
+        margin-left: 0%;
+        width: 6%; 
+    
+  
+        .first,
+        .second,
+        .third {
+            width: 50%;
+        }
+        
+
+
+  }
+  
+}
+  

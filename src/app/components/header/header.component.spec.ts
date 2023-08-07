@@ -4,6 +4,7 @@ import { HeaderComponent } from './header.component';
 import { TranslateFakeLoader, TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatMenuModule } from '@angular/material/menu';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -16,6 +17,7 @@ describe('HeaderComponent', () => {
       schemas:[CUSTOM_ELEMENTS_SCHEMA],
       imports:[
         MatMenuModule,
+        RouterTestingModule,
         TranslateModule.forRoot({
           loader: {
             provide: TranslateLoader,
@@ -66,4 +68,5 @@ describe('HeaderComponent', () => {
     // Check if the use method is called with the correct argument
     expect(translateService.currentLang).toEqual(lang);
   });
+
 });
