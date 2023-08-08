@@ -97,6 +97,7 @@
 
 
 mat-drawer {
+    height: auto !important;
     a:first-of-type{
         margin-top: 60px;
     }
@@ -113,6 +114,7 @@ mat-drawer {
 
 mat-drawer-content{
     height: 100% !important;
+    overflow: hidden;
 
  }
 
