@@ -129,8 +129,8 @@
     }
 }
 #videoPlayer{
-    width: 860px;
-    height: 480px;
+    width: 53rem;
+    height: 30rem;
 }
 
 @keyframes pulse {
@@ -209,6 +209,12 @@
     59%, 100% {  text-shadow: none; transform: none; }
 }
 
+@media (max-width:1050px){
+    #videoPlayer{
+        width: 40rem;
+        height: 30rem;
+    }
+}
 
 @media (max-width:1037px){
     .hero-content{
@@ -220,7 +226,7 @@
                     }
                 }
                 .play{
-                    margin-left: 35px;
+                    margin-left: -.8rem;
                 }
             }
             .btns{
@@ -259,7 +265,7 @@
         }
     }
     #videoPlayer{
-        width: 26rem;
+        width: 31rem;
         height: 26rem;
     }
 }
@@ -314,11 +320,26 @@
             }
             .btns{
                 flex-direction: column;
+                .first-btn, .second-btn{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                .third-btn{
+                    margin-top: 25px;
+                }
             }
         }
     }
     #videoPlayer{
+        width: 25rem;
+        height: 12.5rem;
+    }
+ 
+}
+
+@media (max-width:455px){
+    #videoPlayer{
         width: 20rem;
-        height: 20rem;
+        height: 12.5rem;
     }
 }
