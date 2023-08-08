@@ -88,39 +88,44 @@ describe('FooterComponent', () => {
     });
   }));
 
-  it('should hide language button on handset viewport', waitForAsync(() => {
-    // Mock the window.innerWidth to simulate handset viewport
-    const mockInnerWidth = 320; // Example value for handset width
-    Object.defineProperty(window, 'innerWidth', { value: mockInnerWidth });
-
-    // Force the window resize event to trigger the breakpoint observer
-    window.dispatchEvent(new Event('resize'));
-
-    fixture.detectChanges(); // Trigger change detection
-
-    fixture.whenStable().then(() => {
-      const langButton = fixture.debugElement.query(By.css('#lang_item'));
-
-      // Expect the language button to be hidden in handset viewport
-      expect(langButton.nativeElement.style.display).toBe('none');
-    });
-  }));
-
-  it('should show language button on larger viewport', waitForAsync(() => {
-    // Mock the window.innerWidth to simulate larger viewport
-    const mockInnerWidth = 1024; // Example value for larger width
-    Object.defineProperty(window, 'innerWidth', { value: mockInnerWidth });
-
-    // Force the window resize event to trigger the breakpoint observer
-    window.dispatchEvent(new Event('resize'));
-
-    fixture.detectChanges(); // Trigger change detection
-
-    fixture.whenStable().then(() => {
-      const langButton = fixture.debugElement.query(By.css('#lang_item'));
-
-      // Expect the language button to be shown in larger viewport
-      expect(langButton.nativeElement.style.display).toBe('flex');
-    });
-  }));
+  it('should show language button', () => {
+    // Arrange
+    const langButtonElement = document.createElement('div');
+    langButtonElement.id = 'lang_item';
+    langButtonElement.style.display = 'none'; // Simulate hidden state
+    document.body.appendChild(langButtonElement);
+  
+    // Act
+    component.showLanguageButton();
+    fixture.detectChanges();
+  
+    // Assert
+    const langButton = fixture.debugElement.query(By.css('#lang_item'));
+  
+    // Expect the language button's display style to be 'flex'
+    expect(langButton.nativeElement.style.display).toBe('flex');
+  
+    // Cleanup
+    document.body.removeChild(langButtonElement);
+  });
+  
+  it('should hide language button', () => {
+    // Arrange
+    const langButtonElement = document.createElement('div');
+    langButtonElement.id = 'lang_item';
+    document.body.appendChild(langButtonElement);
+  
+    // Act
+    component.hideLanguageButton();
+    fixture.detectChanges();
+  
+    // Assert
+    const langButton = fixture.debugElement.query(By.css('#lang_item'));
+  
+    // Expect the language button's display style to be 'none'
+    expect(langButton.nativeElement.style.display).toBe('none');
+  
+    // Cleanup
+    document.body.removeChild(langButtonElement);
+  });
 });

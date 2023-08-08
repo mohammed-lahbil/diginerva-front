@@ -112,7 +112,7 @@
   .lower-footer {
     .navbar {
       display: inline-grid;
-      padding-bottom: 25%;
+      padding-bottom: 144px;
       justify-content: center;
       .navbar-items {
         margin-top: 2%;
@@ -126,12 +126,5 @@
     }
   }
 }
-@media (max-width: 600px) {
-  .lower-footer {
-    .navbar {
-      display: inline-grid;
-      padding-bottom: 38%;
-      justify-content: center;
-    }
-  }
-}
+
+
