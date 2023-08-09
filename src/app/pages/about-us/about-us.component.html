@@ -5,9 +5,9 @@
             {{ "pages.about-us.our_values.description" | translate }}
         </p>
         <div class="values-items">
-            <div *ngFor="let item of valuesData">
-                <app-our-values [title]="item.title" [description]="item.description"
-                    [imagePath]="item.imagePath"></app-our-values>
+            <div *ngFor="let item of values">
+                <app-value [title]="item.title" [description]="item.description"
+                    [imagePath]="item.imagePath"></app-value>
             </div>
         </div>
     </div>
