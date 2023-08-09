@@ -75,6 +75,20 @@
                 "title": "Nos Articles",
                 "read_more": "Lire la suite"
             }
-        }
+        },
+        "about-us" :{
+            "our_values":{
+                "title":"Nos valeurs",
+                "description":"At Diginerva, we value trust, sustainability, transparency, agility and boldness. We've built these tenants into the DNA of our company."
+            },
+            "values":{
+                "title":{
+                   "innovation":"Innovation"
+                },
+                "description":{
+                   "innovation":"Our solutions are simple, clear, unique and above all effective. The objective is to offer clients accessible solutions and bring real added value to the market."
+                }
+           }
+    }
     }
 }

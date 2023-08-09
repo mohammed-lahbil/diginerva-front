@@ -30,7 +30,8 @@ import { OurNewsComponent } from './pages/home/our-news/our-news.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { OurTalentsComponent } from './pages/home/our-talents/our-talents.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LayoutModule } from '@angular/cdk/layout'; // Import the LayoutModule
+import { LayoutModule } from '@angular/cdk/layout';
+import { OurValuesComponent } from './pages/about-us/our-values/our-values.component'; // Import the LayoutModule
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { LayoutModule } from '@angular/cdk/layout'; // Import the LayoutModule
     MiniServicesCardsComponent,
     OurTalentsComponent,
     OurArticlesComponent,
-    OurNewsComponent
+    OurNewsComponent,
+    OurValuesComponent
   ],
   imports: [
     BrowserModule,

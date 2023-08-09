@@ -1,0 +1,50 @@
+@import "../../app.component.scss";
+
+.about-us {
+    width: 100%;
+    color: white;
+
+    .values-section {
+        width: 100%;
+        background: $dark-blue;
+        padding: 25px 65px;
+
+        .title {
+            font-size: 1.9rem;
+            padding-left: 10px;
+
+        }
+
+        .description {
+            width: 60%;
+            padding-left: 10px;
+        }
+
+        .values-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 3.3rem;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .values-items>* {
+            flex: 1 0 calc(50% - 10px);
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .about-us {
+        .values-section {
+            .description {
+                width: 100%;
+            }
+
+            .values-items>* {
+                flex: 1 0 calc(100% - 10px);
+            }
+        }
+    }
+}
