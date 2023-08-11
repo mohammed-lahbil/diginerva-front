@@ -1,1 +1,14 @@
-<p>about-us works!</p>
+<div class="about-us">
+    <div class="values-section">
+        <h2 class="title">{{ "pages.about-us.our_values.title" | translate }}</h2>
+        <p class="description">
+            {{ "pages.about-us.our_values.description" | translate }}
+        </p>
+        <div class="values-items">
+            <div *ngFor="let item of values">
+                <app-value [title]="item.title" [description]="item.description"
+                    [imagePath]="item.imagePath"></app-value>
+            </div>
+        </div>
+    </div>
+</div>
