@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TranslateLoader, TranslateModule  } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
@@ -71,13 +71,13 @@ import { MiniTeamCardComponent } from './pages/about-us/mini-team-card/mini-team
     MatSidenavModule,
     AppRoutingModule,
     HttpClientModule,
-    LayoutModule, 
+    LayoutModule,
     TranslateModule.forRoot({
-        loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
     }),
     BrowserAnimationsModule
   ],
@@ -93,8 +93,8 @@ export class AppModule {
     this.matIconRegistry.addSvgIcon('semi-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/semi-blur.svg'));
     this.matIconRegistry.addSvgIcon('lens-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/lens-blur.svg'));
     this.matIconRegistry.addSvgIcon('long_arrow', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/long_arrow.svg'));
-    this.matIconRegistry.addSvgIcon('play',this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/play.svg'));
-    this.matIconRegistry.addSvgIcon('close',this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/close.svg'));
+    this.matIconRegistry.addSvgIcon('play', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/play.svg'));
+    this.matIconRegistry.addSvgIcon('close', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/close.svg'));
   }
 }
 
