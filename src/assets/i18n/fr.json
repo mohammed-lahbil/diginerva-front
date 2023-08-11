@@ -75,6 +75,29 @@
                 "title": "Nos Articles",
                 "read_more": "Lire la suite"
             }
-        }
-    }
+        },
+        "about-us" : {
+            "missions":{
+                "title":{
+                    "our_mission": "Notre mission est",
+                    "acceleration":"l'acceleration",
+                    "of":"de",
+                    "digital":"la transformation numérique"
+                } ,
+                "description":{
+                    "diginerva":"Diginerva est une société de conseil, ayant pour mission principale",
+                    "acceleration":"l'accélérer des projets de transformation numérique de ses clients au ",
+                    "morocco":" Maroc, puis de déployer cette approche à l'échelle du continent africain. "
+                }
+            },
+            "story":{
+                "title":"Our story",
+                "description":{
+                    "paragraph1":"Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain.",
+                    "paragraph2":"Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain. Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain.",
+                    "paragraph3":"Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain."
+            }
+            }
+}
+}
 }
