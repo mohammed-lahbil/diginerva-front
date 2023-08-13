@@ -13,6 +13,8 @@ describe('AboutUsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      declarations: [ AboutUsComponent ],
+      imports:[
       declarations: [ AboutUsComponent , MiniTeamCardComponent,JoinOurTeamComponent ], // Add MiniTeamCardComponent
       imports:[
         MatDialogModule,

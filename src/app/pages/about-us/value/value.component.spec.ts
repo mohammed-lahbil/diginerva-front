@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { ValueComponent } from './value.component';
 
 describe('ValueComponent', () => {
@@ -8,7 +8,15 @@ describe('ValueComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ValueComponent]
+      declarations: [ValueComponent],
+      imports:[
+        TranslateModule.forRoot({
+          loader: {
+            provide: TranslateLoader,
+            useClass: TranslateFakeLoader
+          }
+        }),
+      ]
     })
       .compileComponents();
 
