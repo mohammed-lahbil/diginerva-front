@@ -1,5 +1,4 @@
-import { Component, Input,HostListener } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, Input,HostListener, OnInit } from '@angular/core';
 import heroData from '../../../../assets/data/hero-data.json'
 
 @Component({
@@ -7,14 +6,16 @@ import heroData from '../../../../assets/data/hero-data.json'
   templateUrl: './hero-about-us.component.html',
   styleUrls: ['./hero-about-us.component.scss']
 })
-export class HeroAboutUsComponent {
-  constructor(private translate: TranslateService) { this.checkScreenSize(); }
+export class HeroAboutUsComponent implements OnInit {
+  ngOnInit() {
+    this.checkScreenSize();
+  }
   @Input() title = '';
   @Input() description = '';
   @Input() imagePaths: string[] = heroData;
   zoomStates: boolean[] = Array(this.imagePaths.length).fill(false);
-  isVerticalDisplay: boolean = false;
-  isMobile: boolean = false;
+  isVerticalDisplay = false;
+  isMobile = false;
 
   zoomInImage(index: number): void {
     this.zoomStates[index] = true;
@@ -34,5 +35,4 @@ export class HeroAboutUsComponent {
     this.isMobile = window.innerWidth <= 1140;
   }
 
-  
 }

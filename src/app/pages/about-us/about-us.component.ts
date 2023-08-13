@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { miniCardTeam } from '../../models/miniCardTeam';
 import MiniTeamData from '../../../assets/data/team-data.json';
-import { HeroAboutUsComponent } from '../about-us/hero-about-us/hero-about-us.component';
+import { Value } from 'src/app/models/value.model';
+import valuesData from '../../../assets/data/values-data.json';
 
 @Component({
   selector: 'app-about-us',
@@ -10,6 +11,5 @@ import { HeroAboutUsComponent } from '../about-us/hero-about-us/hero-about-us.co
 })
 export class AboutUsComponent {
   miniTeam: miniCardTeam[] = MiniTeamData;
-  
-
+  values: Value[] = valuesData;
 }

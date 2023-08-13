@@ -35,6 +35,7 @@ import { JoinOurTeamComponent } from './pages/about-us/join-our-team/join-our-te
 import { MiniTeamCardComponent } from './pages/about-us/mini-team-card/mini-team-card.component'; // Import the LayoutModule
 import { HeroAboutUsComponent } from './pages/about-us/hero-about-us/hero-about-us.component';
 import { OurStoryComponent } from './pages/about-us/our-story/our-story.component';
+import { ValueComponent } from './pages/about-us/value/value.component';
 
 @NgModule({
   declarations: [
@@ -52,9 +53,9 @@ import { OurStoryComponent } from './pages/about-us/our-story/our-story.componen
     OurTalentsComponent,
     OurArticlesComponent,
     OurNewsComponent,
+    ValueComponent,
     JoinOurTeamComponent,
-    MiniTeamCardComponent
-    HeroAboutUsComponent,
+    MiniTeamCardComponent,
     OurStoryComponent
   ],
   imports: [
