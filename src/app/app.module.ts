@@ -33,6 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
 import { JoinOurTeamComponent } from './pages/about-us/join-our-team/join-our-team.component';
 import { MiniTeamCardComponent } from './pages/about-us/mini-team-card/mini-team-card.component'; // Import the LayoutModule
+import { HeroAboutUsComponent } from './pages/about-us/hero-about-us/hero-about-us.component';
+import { OurStoryComponent } from './pages/about-us/our-story/our-story.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { MiniTeamCardComponent } from './pages/about-us/mini-team-card/mini-team
     ContactComponent,
     ServicesComponent,
     AboutUsComponent,
+    HeroAboutUsComponent,
     FooterComponent,
     HeroComponent,
     MiniCardComponent,
@@ -51,6 +54,8 @@ import { MiniTeamCardComponent } from './pages/about-us/mini-team-card/mini-team
     OurNewsComponent,
     JoinOurTeamComponent,
     MiniTeamCardComponent
+    HeroAboutUsComponent,
+    OurStoryComponent
   ],
   imports: [
     BrowserModule,

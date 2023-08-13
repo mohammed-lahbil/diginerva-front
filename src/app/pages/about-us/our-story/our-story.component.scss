@@ -1,0 +1,73 @@
+@import "../../../app.component.scss";
+
+.story{
+    margin-left: 15%;
+    margin-bottom: 10%;
+    .story-head{
+        color: $dark-blue;
+        margin-top: 6%;
+        font-size: 25px;
+        margin-bottom: 5%;
+        
+    
+    }
+    .story-text{
+        margin-right: 17%;
+        padding-top: 0;
+        p
+        {
+            font-size: 1.5vw;
+            margin-bottom: 10px;
+            
+        }
+    }
+}
+
+
+@media (min-width:1300px) {
+    .story{
+        .story-head{
+            font-size: 3rem;
+        }
+        .story-text{
+            p{
+                font-size: 1.8vw;
+                padding-right: 10%;
+            }
+        }
+    }   
+  }
+
+  @media (max-width:900px) {
+    .story{
+
+        
+        .story-text{
+            p{
+                font-size: 2.2vw;
+            }
+        }
+    }   
+  }
+
+  @media (max-width: 600px) {
+    .story{
+
+        .story-text{
+            p{
+                font-size: 3vw;
+            }
+        }
+    }   
+  }
+
+  @media (max-width: 300px) {
+    .story{
+
+        .story-head{
+            font-size: 20px;
+        }
+    }   
+  }
+
+ 

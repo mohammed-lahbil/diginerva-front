@@ -99,5 +99,29 @@
                 "join_us":"Join us"
             }
         }
-    } 
+    },
+        "about-us" : {
+            "missions":{
+                    "title":{
+                        "our_mission": "Our mission is the",
+                        "acceleration":"acceleration",
+                        "of":"of",
+                        "digital":"digital transformation"
+                    },
+                    "description":{
+                        "diginerva":"Diginerva is a consulting company, with the main mission the",
+                        "acceleration":"acceleration of digital transformation projects of its clients in",
+                        "morocco":" Morocco and then the scale of African continent "
+                    }
+            },
+            "story":{
+                "title":"Our story",
+                "description":{
+                    "paragraph1":"Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent",
+                    "paragraph2":"Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent. Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent",
+                    "paragraph3":"Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in  Morocco and then the scale of African continent"
+                }
+            }
+    }
+}
 }
