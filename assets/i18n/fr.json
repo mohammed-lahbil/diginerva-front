@@ -1,0 +1,138 @@
+{
+  "common": {
+      "language": "Français",
+      "lang": "FR",
+      "discover_more": "Découvrir plus"
+  },
+  "header": {
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "contact": "Contact"
+  },
+  "footer": {
+      "desc": "Contactez nous pour débuter votre",
+      "project": " projet",
+      "copyright": "Tous droits réservés",
+      "send": "Envoyer",
+      "useful-link": {
+          "terms": "Conditions d'utilisation",
+          "policy": "Politique de confidentialité",
+          "security": "Sécurité"
+      },
+      "form": {
+          "full_name": "Nom complet",
+          "phone_number": "Numéro de téléphone",
+          "email": "Email",
+          "message": "Message"
+      }
+  },
+  "pages": {
+      "home": {
+          "title": "Accélération Digitale",
+          "description": "Diginerva est un cabinet de conseil, avec pour mission principale l'accélération des projets de transformation digitale de ses clients au Maroc puis à l'échelle du continent africain. Cette mission concerne davantage les projets sur les technologies avancées telles que le web, le mobile, l'UI/UX, la cybersécurité, le marketing digital et le business consulting.",
+          "btns": {
+              "become_client": "Devenir client",
+              "join_us": "Nous rejoindre",
+              "sponsor_us": "Nous sponsoriser"
+          },
+          "infos": {
+              "title": {
+                  "our_vision": "Notre vision",
+                  "our_mission": "Notre mission"
+              },
+              "description": {
+                  "our_vision": "Notre vision est que le Maroc soit un leader en Afrique en tirant parti des dernières technologies numériques pour améliorer la vie de nos clients et créer un développement économique durable. Nous nous efforçons de rassembler les esprits les plus novateurs pour favoriser une culture numérique innovante et dynamique.",
+                  "our_mission": "Notre mission consiste à accompagner nos clients pour transformer et gérer leur business à l’ère du digital dans des différents aspects : production, service client, marketing, finance, ressources humaines, passant par la communication interne et jusqu’aux interactions avec les parties prenantes de l’entreprise (prospects, clients, collaborateurs, actionnaires, fournisseurs…). L’objectif est d’intégrer et d’utiliser la technologie pour lever les points de blocage ou les difficultés rencontrées par nos clients afin d’améliorer ses services et ses productivités."
+              }
+          },
+          "our_services": "Nos Services",
+          "services": {
+              "title": {
+                  "it_consulting": "IT Consulting",
+                  "technology": "Technologie",
+                  "solutions_integration": "Intégration des solutions",
+                  "cybersecurity": "Cybersecurité",
+                  "digital_marketing": "Marketing Digital"
+              },
+              "description": {
+                  "it_consulting": "Afin de vous permettre une transformation digitale pérenne, aboutie et durable, Nous vous accompagnons à définir votre stratégie digitale et partageons avec vous les bonnes pratiques propices à l'émergence d’idées novatrices pour la mise en place de cette dernière.",
+                  "technology": "En se basant sur des technologies de dernière génération, nous vous aiderons à concevoir et développer les meilleures solutions et applications pour des cas précis.",
+                  "solutions_integration": "Nous vous accompagnons dans toutes les phases de votre projet de solutions intégrées de gestion d’entreprise.",
+                  "cybersecurity": "Les menaces modernes sont complexes et doivent être prises très au sérieux. Une seule violation de données ou une attaque de ransomware peut causer d'énormes dommages financiers, juridiques et de réputation. Pour aider nos clients à se protéger, des consultants en sécurité Offensive sont prêts pour auditer votre système d’information.",
+                  "digital_marketing": "Le marketing digital change tout : commerce, culture et communauté. Nous travaillons au point de rencontre des nouvelles technologies et des nouvelles idées, pour créer des canaux et des campagnes commerciales stratégiques et puissants qui vous amènent au bon public, en développant votre marque et en apportant des revenus."
+              }
+          },
+          "join_us": {
+              "description": "Rejoignez une grande communauté de talents et boostez votre carrière.",
+              "btn": "Rejoignez-nous"
+          },
+          "our_talents": {
+              "title": "Nos Talents",
+              "description": "Notre équipe est composée d'un groupe diversifié de talents possédant un éventail de compétences commerciales, techniques et fonctionnelles. Nous nous efforçons de créer des solutions innovantes et créatives pour obtenir les meilleurs résultats possibles pour nos clients. "
+          },
+          "our_articles": {
+              "title": "Nos Articles",
+              "read_more": "Lire la suite"
+          }
+      },
+      "about_us": {
+          "our_values":{
+              "title":"Nos valeurs",
+              "description":"At Diginerva, we value trust, sustainability, transparency, agility and boldness. We've built these tenants into the DNA of our company.",
+              "values":{
+                  "value1":{
+                      "title":{
+                          "innovation":"Innovation"
+                      },
+                      "description":{
+                          "innovation":"Our solutions are simple, clear, unique and above all effective. The objective is to offer clients accessible solutions and bring real added value to the market."
+                      }
+                  }
+              }
+          },
+          "meet_our_team": {
+              "title": "Découvrez Notre Equipe",
+              "team": {
+                  "team_name": {
+                      "team_name1": "Adil El Nassiri",
+                      "team_name2": "Adil El Nassiri",
+                      "team_name3": "Adil El Nassiri",
+                      "team_name4": "Adil El Nassiri",
+                      "team_name5": "Adil El Nassiri",
+                      "team_name6": "Adil El Nassiri"
+                  },
+                  "job": {
+                      "software_engineer": "Ingénieur Informatique"
+                  }
+              }
+          },
+          "join_our_team": {
+              "title": "Rejoignez notre équipe",
+              "description": "Diginerva is a consulting company, with the main mission the acceleration of digital transformation projects of its clients in Morocco and then the scale of the African continent.",
+              "join_us": "Rejoignez-nous"
+          },
+          "missions": {
+              "title": {
+                  "our_mission": "Notre mission est",
+                  "acceleration": "l'acceleration",
+                  "of": "de",
+                  "digital": "la transformation numérique"
+              },
+              "description": {
+                  "diginerva": "Diginerva est une société de conseil, ayant pour mission principale",
+                  "acceleration": "l'accélérer des projets de transformation numérique de ses clients au ",
+                  "morocco": " Maroc, puis de déployer cette approche à l'échelle du continent africain. "
+              }
+          },
+          "story": {
+              "title": "Our story",
+              "description": {
+                  "paragraph1": "Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain.",
+                  "paragraph2": "Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain. Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain.",
+                  "paragraph3": "Diginerva est une société de conseil, ayant pour mission principale l'accélérer des projets de transformation numérique de ses clients au  Maroc, puis de déployer cette approche à l'échelle du continent africain."
+              }
+          }
+      }
+  }
+}
