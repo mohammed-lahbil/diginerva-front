@@ -31,7 +31,10 @@ import { GalleriaModule } from 'primeng/galleria';
 import { OurTalentsComponent } from './pages/home/our-talents/our-talents.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
-import { ValueComponent } from './pages/about-us/value/value.component'; // Import the LayoutModule
+import { JoinOurTeamComponent } from './pages/about-us/join-our-team/join-our-team.component';
+import { MiniTeamCardComponent } from './pages/about-us/mini-team-card/mini-team-card.component'; // Import the LayoutModule
+import { HeroAboutUsComponent } from './pages/about-us/hero-about-us/hero-about-us.component';
+import { OurStoryComponent } from './pages/about-us/our-story/our-story.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,7 @@ import { ValueComponent } from './pages/about-us/value/value.component'; // Impo
     ContactComponent,
     ServicesComponent,
     AboutUsComponent,
+    HeroAboutUsComponent,
     FooterComponent,
     HeroComponent,
     MiniCardComponent,
@@ -48,7 +52,10 @@ import { ValueComponent } from './pages/about-us/value/value.component'; // Impo
     OurTalentsComponent,
     OurArticlesComponent,
     OurNewsComponent,
-    ValueComponent
+    JoinOurTeamComponent,
+    MiniTeamCardComponent
+    HeroAboutUsComponent,
+    OurStoryComponent
   ],
   imports: [
     BrowserModule,
