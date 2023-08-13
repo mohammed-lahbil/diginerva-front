@@ -1,0 +1,59 @@
+@import "../../../app.component.scss";
+
+.value-item {
+    margin: 5px;
+    padding: 10px;
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        background-color: #353a4e;
+        padding: 5px;
+        box-sizing: content-box;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        animation: move-item 5s infinite alternate-reverse;
+    }
+
+    .item-title {
+        margin: 0;
+        margin-top: 8px;
+    }
+
+    .item-description {
+        margin-top: 5px;
+        width: 75%;
+    }
+}
+
+
+@keyframes move-item {
+
+    0%,
+    50%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25%,
+    75% {
+        transform: translate(0, -5px);
+    }
+}
+
+
+@media(max-width:768px) {
+    .value-item {
+        .item-description {
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:363px) {
+    .value-item {
+        .item-description {
+            width: 100%;
+        }
+    }
+}

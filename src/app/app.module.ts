@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TranslateLoader, TranslateModule  } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
@@ -30,6 +30,12 @@ import { OurNewsComponent } from './pages/home/our-news/our-news.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { OurTalentsComponent } from './pages/home/our-talents/our-talents.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LayoutModule } from '@angular/cdk/layout';
+import { JoinOurTeamComponent } from './pages/about-us/join-our-team/join-our-team.component';
+import { MiniTeamCardComponent } from './pages/about-us/mini-team-card/mini-team-card.component'; // Import the LayoutModule
+import { HeroAboutUsComponent } from './pages/about-us/hero-about-us/hero-about-us.component';
+import { OurStoryComponent } from './pages/about-us/our-story/our-story.component';
+import { ValueComponent } from './pages/about-us/value/value.component';
 
 @NgModule({
   declarations: [
@@ -39,13 +45,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     ServicesComponent,
     AboutUsComponent,
+    HeroAboutUsComponent,
     FooterComponent,
     HeroComponent,
     MiniCardComponent,
     MiniServicesCardsComponent,
     OurTalentsComponent,
     OurArticlesComponent,
-    OurNewsComponent
+    OurNewsComponent,
+    ValueComponent,
+    JoinOurTeamComponent,
+    MiniTeamCardComponent,
+    OurStoryComponent
   ],
   imports: [
     BrowserModule,
@@ -66,12 +77,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSidenavModule,
     AppRoutingModule,
     HttpClientModule,
+    LayoutModule,
     TranslateModule.forRoot({
-        loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
     }),
     BrowserAnimationsModule
   ],
@@ -87,8 +99,8 @@ export class AppModule {
     this.matIconRegistry.addSvgIcon('semi-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/semi-blur.svg'));
     this.matIconRegistry.addSvgIcon('lens-blur', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/lens-blur.svg'));
     this.matIconRegistry.addSvgIcon('long_arrow', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/long_arrow.svg'));
-    this.matIconRegistry.addSvgIcon('play',this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/play.svg'));
-    this.matIconRegistry.addSvgIcon('close',this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/close.svg'));
+    this.matIconRegistry.addSvgIcon('play', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/play.svg'));
+    this.matIconRegistry.addSvgIcon('close', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/close.svg'));
   }
 }
 

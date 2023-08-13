@@ -1,6 +1,11 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FooterComponent } from './footer.component';
-import { TranslateFakeLoader, TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import {
+  TranslateFakeLoader,
+  TranslateLoader,
+  TranslateModule,
+  TranslateService,
+} from '@ngx-translate/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
@@ -23,15 +28,15 @@ describe('FooterComponent', () => {
         TranslateModule.forRoot({
           loader: {
             provide: TranslateLoader,
-            useClass: TranslateFakeLoader
-          }
+            useClass: TranslateFakeLoader,
+          },
         }),
         MatMenuModule,
         MatButtonModule,
         MatIconModule,
         MatToolbarModule,
         MatInputModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
       ],
     }).compileComponents();
   }, 10000);
@@ -64,7 +69,7 @@ describe('FooterComponent', () => {
     const useSpy = jest.spyOn(translateService, 'use');
 
     // Choose one of the language menu items
-    const langMenuItem = fixture.debugElement.query(By.css('#lang-item'));
+    const langMenuItem = fixture.debugElement.query(By.css('#lang_item'));
 
     // Simulate a click on the language menu item
     langMenuItem.nativeElement.click();
@@ -83,4 +88,44 @@ describe('FooterComponent', () => {
     });
   }));
 
+  it('should show language button', () => {
+    // Arrange
+    const langButtonElement = document.createElement('div');
+    langButtonElement.id = 'lang_item';
+    langButtonElement.style.display = 'none'; // Simulate hidden state
+    document.body.appendChild(langButtonElement);
+  
+    // Act
+    component.showLanguageButton();
+    fixture.detectChanges();
+  
+    // Assert
+    const langButton = fixture.debugElement.query(By.css('#lang_item'));
+  
+    // Expect the language button's display style to be 'flex'
+    expect(langButton.nativeElement.style.display).toBe('flex');
+  
+    // Cleanup
+    document.body.removeChild(langButtonElement);
+  });
+  
+  it('should hide language button', () => {
+    // Arrange
+    const langButtonElement = document.createElement('div');
+    langButtonElement.id = 'lang_item';
+    document.body.appendChild(langButtonElement);
+  
+    // Act
+    component.hideLanguageButton();
+    fixture.detectChanges();
+  
+    // Assert
+    const langButton = fixture.debugElement.query(By.css('#lang_item'));
+  
+    // Expect the language button's display style to be 'none'
+    expect(langButton.nativeElement.style.display).toBe('none');
+  
+    // Cleanup
+    document.body.removeChild(langButtonElement);
+  });
 });

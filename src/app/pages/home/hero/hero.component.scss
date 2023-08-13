@@ -1,4 +1,7 @@
 @import "../../../app.component.scss";
+
+
+
 .hero-content{
     font-family: $primary-font;
     background: $dark-blue;
@@ -125,6 +128,10 @@
         }
     }
 }
+#videoPlayer{
+    width: 53rem;
+    height: 30rem;
+}
 
 @keyframes pulse {
     0% {
@@ -200,4 +207,139 @@
         text-shadow: 0 12px -8px $light-blue, 0 -8px 12px $orange;
     }
     59%, 100% {  text-shadow: none; transform: none; }
+}
+
+@media (max-width:1050px){
+    #videoPlayer{
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width:1037px){
+    .hero-content{
+        .left-side{
+            .upper{
+                .title{
+                    h1{
+                        font-size: 5rem;
+                    }
+                }
+                .play{
+                    margin-left: -.8rem;
+                }
+            }
+            .btns{
+                margin-top: 3rem;
+                .first-btn, .second-btn, .third-btn{
+                    font-size: .8rem;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width:840px){
+    .hero-content{
+        .left-side{
+            .upper{
+                flex-direction: column;
+                gap: 12px;
+                .title{
+                    width: 100%;
+                }
+            }
+            .btns{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                .first-btn, .second-btn, .third-btn{
+                    font-size: .9rem;
+                    margin-left: 60px;
+           
+                }
+            }
+        }
+    }
+    #videoPlayer{
+        width: 31rem;
+        height: 26rem;
+    }
+}
+
+@media (max-width :785px){
+    .hero-content{
+        .left-side{
+        width: 100%;
+
+            .btns{
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                .first-btn, .second-btn, .third-btn{
+                    font-size: 1rem;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:716px){
+    .hero-content{
+        .left-side{
+            .upper{
+                .title{
+                    h1{
+                       font-size: 4rem; 
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+@media (max-width:611px){
+    .hero-content{
+        .left-side{
+            .upper{
+                .title{
+                    width: 100%;
+                    h1{
+                        width: 100%;
+                       font-size: 12vw; 
+                       box-sizing: border-box;
+                       padding-left: 7px;
+                    }
+                    
+                }
+            }
+            .btns{
+                flex-direction: column;
+                .first-btn, .second-btn{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                .third-btn{
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #videoPlayer{
+        width: 25rem;
+        height: 12.5rem;
+    }
+ 
+}
+
+@media (max-width:455px){
+    #videoPlayer{
+        width: 20rem;
+        height: 12.5rem;
+    }
 }

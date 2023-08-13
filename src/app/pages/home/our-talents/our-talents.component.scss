@@ -40,3 +40,29 @@
         }
     }
 }
+
+@media (max-width:910px){
+    .talents{
+        .join-us{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-left: 0;
+            margin: auto;
+            .left-side{
+                .join-btn{
+                    font-size: .76rem;
+                }
+            }
+            .right-side{
+                padding-left: 0;
+                img{
+                    align-self: center;
+                    width: 10rem;
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}
